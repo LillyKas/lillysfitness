@@ -1,0 +1,113 @@
+[
+  {
+    "number": "1",
+    "nameOfExercise": "stretch up and down",
+    "duration": 30
+  },
+  {
+    "number": "2",
+    "nameOfExercise": "leg stretch side to side",
+    "duration": 30
+  },
+  {
+    "number": "3",
+    "nameOfExercise": "back to wall",
+    "duration": 30
+  },
+  {
+    "number": "4",
+    "nameOfExercise": "downward dog",
+    "duration": 30
+  },
+  {
+    "number": "5",
+    "nameOfExercise": "cobra",
+    "duration": 30
+  },
+  {
+    "number": "6",
+    "nameOfExercise": "child pose",
+    "duration": 30
+  },
+  {
+    "number": "7",
+    "nameOfExercise": "straight leg stand stretch (pyramid) left",
+    "duration": 30
+  },
+  {
+    "number": "8",
+    "nameOfExercise": "straight leg stand stretch (pyramid) right",
+    "duration": 30
+  },
+  {
+    "number": "9",
+    "nameOfExercise": "low lunge left",
+    "duration": 30
+  },
+  {
+    "number": "10",
+    "nameOfExercise": "hamstring stretch left",
+    "duration": 30
+  },
+  {
+    "number": "11",
+    "nameOfExercise": "pigeon left",
+    "duration": 30
+  },
+  {
+    "number": "12",
+    "nameOfExercise": "low lunge right",
+    "duration": 30
+  },
+  {
+    "number": "13",
+    "nameOfExercise": "hamstring stretch right",
+    "duration": 30
+  },
+  {
+    "number": "14",
+    "nameOfExercise": "pigeon left right",
+    "duration": 30
+  },
+  {
+    "number": "15",
+    "nameOfExercise": "Wide Forward Fold",
+    "duration": 60
+  },
+  {
+    "number": "16",
+    "nameOfExercise": "Wide Forward Fold Left",
+    "duration": 15
+  },
+  {
+    "number": "17",
+    "nameOfExercise": "Wide Forward Fold Right",
+    "duration": 15
+  },
+  {
+    "number": "18",
+    "nameOfExercise": "Spine Twist Left",
+    "duration": 30
+  },
+  {
+    "number": "19",
+    "nameOfExercise": "Spine Twist Right",
+    "duration": 30
+  },
+  {
+    "number": "20",
+    "nameOfExercise": "Lower Back Circle",
+    "duration": 30
+  },
+  {
+    "number": "21",
+    "nameOfExercise": "Relax",
+    "duration": 60
+  },
+  {
+    "number": "22",
+    "nameOfExercise": "You made it!",
+    "duration":10
+
+  }
+]
