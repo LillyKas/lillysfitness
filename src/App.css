@@ -18,3 +18,120 @@ button {
 img {
   width: 120px;
 }
+
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10vw;
+}
+
+.workout-link-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: Center;
+  padding: 5vw;
+  color: white;
+}
+
+.menu-item {
+  background-image: url("../public/triangle-position.png");
+  width: auto;
+  height: auto;
+}
+
+.logBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.yogaPic {
+  width: 350px;
+  height: 200px;
+  margin: 30%;
+}
+
+.headline {
+  text-align: center;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.loginBtn {
+  width: 60vw;
+  height: auto;
+  background-color: #ead5e6;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 5vh;
+}
+.workoutPic {
+  width: auto;
+  height: 80px;
+  margin: 10px 0px 10px 0px;
+}
+
+.greeting-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-radius: 10px;
+}
+
+
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  
+}
+
+.logoutBtn {
+  width: 60vw;
+  height: auto;
+  background-color: #ead5e6;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.profilePic{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+a{
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.backArrowPic{
+  width:20px;
+  height:20px;
+}
+.animatedPic{
+  width: 200px;
+  height: 200px;
+}
+
+.exercisePic{
+  width:200px;
+  height: auto;
+}

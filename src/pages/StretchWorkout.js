@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import timesUpSound from "../sounds/timesUp.mp3";
-
-import allExercises from "../workoutData/stretchingPam.json";
-
+import '../App.css';
+import allExercises from "../stretchingPam.json";
+import Pic from '../pictures/stretch_poses/upAndDown.png'; 
 
 
 function StretchWorkout() {
@@ -37,7 +37,7 @@ function StretchWorkout() {
 
   
 
-//Stop Timer when time is up
+//Stop Timer when time is up, set new Time so countdown starts again, play audio 
  React.useEffect(()=>{
    if(timer===0 && number <= 2){
      clear();
@@ -66,16 +66,15 @@ function StretchWorkout() {
 
 
 
-
-
-
   return (
     <div className="App">
       <header>
       <div>Time left : {timer} </div>
       </header>
-      <button className="startBtn" onClick={startTimer} disabled={btnStatusStart}>StartTimer</button>
-      <button className="stopBtn" onClick={stopTimer} disabled={btnStatusStop}>StopTimer</button>
+      <button className="startBtn" onClick={startTimer} disabled={btnStatusStart}>Start Workout</button>
+      <button className="stopBtn" onClick={stopTimer} disabled={btnStatusStop}>Stop Workout</button>
+      <img src={exercise[number].picture} alt="exercisePic" className='exercisePic' />
+      <img src={Pic} alt="exercisePic" className='exercisePic' />
       <h2>{exercise[number].nameOfExercise}</h2>
     </div>
   );
