@@ -35,7 +35,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: Center;
+  justify-content: space-evenly;
   padding: 5vw;
   color: white;
 }
@@ -84,10 +84,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-
   border-radius: 10px;
 }
-
 
 
 .menu-container {
@@ -135,3 +133,90 @@ a{
   width:200px;
   height: auto;
 }
+
+.exercise-container{
+margin: 0;
+padding:0;
+width: 80vw;
+height: 45vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+font-family: "Barlow Condensed", sans-serif;
+font-size: 24px;
+background-image: url("./pictures/background-exercise.png");
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.exercise-name{
+  margin-top: 15px;
+  font-size: 32px;
+
+}
+
+.timer-container{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.container-info{
+  margin-top: -15%;
+}
+
+.time-counter{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+margin: 10%;
+}
+
+.time-counter-text{
+  font-family: "Montserrat", sans-serif;
+  font-size: 64px;
+}
+
+.button-container{
+  display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.playBtn-container{
+ background-color: #FFD366;
+ width: 150px;
+ height: auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+ border-radius: 10px;
+}
+
+.playBtnPic{
+  width: 30px;
+  height: auto;
+}
+
+
+.stopBtn-container{
+  background-color: #EAC9DE;
+  width: 150px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+ }
+ 
+ .stopBtnPic{
+   width: 30px;
+   height: auto;
+ }
+ 
+

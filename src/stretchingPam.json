@@ -2,133 +2,133 @@
   {
     "number": "1",
     "nameOfExercise": "stretch up and down",
-    "picture":"./pictures/stretch_poses/upAndDown.png",
+    "picture":"./../stretch_poses/upAndDown.png",
     "duration": 30
   },
   {
     "number": "2",
     "nameOfExercise": "leg stretch side to side",
-    "picture":"./../pictures/stretch_poses/sideToSide.png",
+    "picture":"./../stretch_poses/sideToSide.png",
     "duration": 30
   },
   {
     "number": "3",
     "nameOfExercise": "back to wall",
-    "picture":"./../pictures/stretch_poses/backWall.png",
+    "picture":"./../stretch_poses/backWall.png",
     "duration": 30
   },
   {
     "number": "4",
     "nameOfExercise": "downward dog",
-    "picture":"./../pictures/stretch_poses/downward.png",
+    "picture":"./../stretch_poses/downward.png",
     "duration": 30
   },
   {
     "number": "5",
     "nameOfExercise": "cobra",
-    "picture":"./../pictures/stretch_poses/cobra.png",
+    "picture":"./../stretch_poses/cobra.png",
     "duration": 30
   },
   {
     "number": "6",
     "nameOfExercise": "child pose",
-    "picture":"./../pictures/stretch_poses/child.png",
+    "picture":"./../stretch_poses/child.png",
     "duration": 30
   },
   {
     "number": "7",
     "nameOfExercise": "straight leg stand stretch (pyramid) left",
-    "picture":"./../pictures/stretch_poses/pyramid.png",
+    "picture":"./../stretch_poses/pyramid.png",
     "duration": 30
   },
   {
     "number": "8",
     "nameOfExercise": "straight leg stand stretch (pyramid) right",
-    "picture":"./../pictures/stretch_poses/pyramid.png",
+    "picture":"./../stretch_poses/pyramid.png",
     "duration": 30
   },
   {
     "number": "9",
     "nameOfExercise": "low lunge left",
-    "picture":"./../pictures/stretch_poses/lungeleft.png",
+    "picture":"./../stretch_poses/lungeleft.png",
     "duration": 30
   },
   {
     "number": "10",
     "nameOfExercise": "hamstring stretch left",
-    "picture":"./../pictures/stretch_poses/hamstringLeft.png",
+    "picture":"./../stretch_poses/hamstringLeft.png",
     "duration": 30
   },
   {
     "number": "11",
     "nameOfExercise": "pigeon left",
-    "picture":"./../pictures/stretch_poses/pigeon.png",
+    "picture":"./../stretch_poses/pigeon.png",
     "duration": 30
   },
   {
     "number": "12",
     "nameOfExercise": "low lunge right",
-    "picture":"./../pictures/stretch_poses/lunge.png",
+    "picture":"./../stretch_poses/lunge.png",
     "duration": 30
   },
   {
     "number": "13",
     "nameOfExercise": "hamstring stretch right",
-    "picture":"./../pictures/stretch_poses/hamstringRight.png",
+    "picture":"./../stretch_poses/hamstringRight.png",
     "duration": 30
   },
   {
     "number": "14",
     "nameOfExercise": "pigeon left right",
-    "picture":"./../pictures/stretch_poses/pigeonRight.png",
+    "picture":"./../stretch_poses/pigeonRight.png",
     "duration": 30
   },
   {
     "number": "15",
     "nameOfExercise": "Wide Forward Fold",
-    "picture":"./../pictures/stretch_poses/forwardFold.png",
+    "picture":"./../stretch_poses/forwardFold.png",
     "duration": 60
   },
   {
     "number": "16",
     "nameOfExercise": "Wide Forward Fold Left",
-    "picture":"./../pictures/stretch_poses/forwardLeft.png",
+    "picture":"./../stretch_poses/forwardLeft.png",
     "duration": 15
   },
   {
     "number": "17",
     "nameOfExercise": "Wide Forward Fold Right",
-    "picture":"./../pictures/stretch_poses/forwardRight.png",
+    "picture":"./../stretch_poses/forwardRight.png",
     "duration": 15
   },
   {
     "number": "18",
     "nameOfExercise": "Spine Twist Left",
-    "picture":"./../pictures/stretch_poses/twistLeft.png",
+    "picture":"./../stretch_poses/twistLeft.png",
     "duration": 30
   },
   {
     "number": "19",
     "nameOfExercise": "Spine Twist Right",
-    "picture":"./../pictures/stretch_poses/twistRight.png",
+    "picture":"./../stretch_poses/twistRight.png",
     "duration": 30
   },
   {
     "number": "20",
     "nameOfExercise": "Lower Back Circle",
-    "picture":"./../pictures/stretch_poses/backCircle.png",
+    "picture":"./../stretch_poses/backCircle.png",
     "duration": 30
   },
   {
     "number": "21",
     "nameOfExercise": "Relax",
-    "picture":"./../pictures/stretch_poses/relax.png",
+    "picture":"./../stretch_poses/relax.png",
     "duration": 60
   },
   {
     "number": "22",
     "nameOfExercise": "You made it!",
-    "picture":"./../pictures/stretch_poses/confetti.gif",
+    "picture":"./../stretch_poses/confetti.gif",
     "duration":10
 
   }

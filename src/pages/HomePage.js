@@ -19,14 +19,13 @@ function HomePage() {
         <div className="greeting-container">
         <Link to="/"> 
         <img src={backArrowPic} alt="backArrowPic" className='backArrowPic' />
-       
         </Link>
         <h3>Hello, sunshine</h3>
         <img src={user.picture} alt="profilePic" className='profilePic' />
         </div>
        
       <div className="menu-container">
-      <img src={animatedPic} alt="animatedPic" className='animatedPic' />
+  
         <div className="workout-link-container">
         <Link  to="/stretch">
         <img src={stretchPic} alt="stretchPic" className='workoutPic' />
