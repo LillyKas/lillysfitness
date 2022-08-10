@@ -7,6 +7,7 @@ import backArrowPic from "../pictures/left-arrow.png";
 import playBtnPic from "../pictures/play-button.png";
 import stopBtnPic from "../pictures/pause.png";
 import ProgressBar from "../components/progress-bar.component";
+import {useAuth0} from '@auth0/auth0-react';
 
 const StretchWorkout = () => {
   const [btnStatusStart, setBtnStatusStart] = React.useState(false);
@@ -16,6 +17,8 @@ const StretchWorkout = () => {
   const audio = new Audio(timesUpSound);
 
   const [timer, setTimer] = React.useState(exercise[number].duration);
+
+  const {isAuthenticated} = useAuth0();
 
   //Use RefHook to make it stop at 0
   //stores reference to SetInterval --> clear when timer hits 0
@@ -61,6 +64,8 @@ const StretchWorkout = () => {
   };
 
   return (
+    
+    isAuthenticated && (
     <div className="App">
       <Link to="/">
         <img src={backArrowPic} alt="backArrowPic" className="backArrowPic" />
@@ -85,28 +90,29 @@ const StretchWorkout = () => {
       </div>
       <div className="button-container">
       
-      <div className="playBtn-container">
+      <div    onClick={startTimer} className="playBtn-container">
        <img
           src={playBtnPic}
           alt="btnStart"
           className="playBtnPic"
-          onClick={startTimer}
+        
           disabled={btnStatusStart}
         />
       </div>
 
-      <div className="stopBtn-container">
+      <div   onClick={stopTimer} className="stopBtn-container">
         <img
           src={stopBtnPic}
           alt="btnStop"
           className="stopBtnPic"
-          onClick={stopTimer}
+         
           disabled={btnStatusStop}
         />
         </div>
 
       </div>
     </div>
+    )
   );
 };
 
