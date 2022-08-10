@@ -1,4 +1,4 @@
-import React, { useState, useEffect, PureComponent } from "react";
+import React, { useState, useEffect } from "react";
 import timesUpSound from "../sounds/timesUp.mp3";
 import "../App.css";
 import allExercises from "../stretchingPam.json";
@@ -8,14 +8,7 @@ import playBtnPic from "../pictures/play-button.png";
 import stopBtnPic from "../pictures/pause.png";
 import ProgressBar from "../components/progress-bar.component";
 
-
-
-
 const StretchWorkout = () => {
-
-
-
-
   const [btnStatusStart, setBtnStatusStart] = React.useState(false);
   const [btnStatusStop, setBtnStatusStop] = React.useState(true);
   const [exercise, setExercise] = useState(allExercises);
@@ -67,25 +60,12 @@ const StretchWorkout = () => {
     setBtnStatusStop(true);
   };
 
-
- const play=() => { 
-
-    var audio = new Audio( 
-'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3'); 
-
-    audio.play(); 
-
-} 
-
-
-
   return (
     <div className="App">
       <Link to="/">
         <img src={backArrowPic} alt="backArrowPic" className="backArrowPic" />
       </Link>
 
-      <button onClick={play}>Press Here!</button> 
       <div className="exercise-container">
         <img
           src={exercise[number].picture}
