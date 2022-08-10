@@ -9,6 +9,8 @@ import stopBtnPic from "../pictures/pause.png";
 import ProgressBar from "../components/progress-bar.component";
 import {useAuth0} from '@auth0/auth0-react';
 
+import SpotifyPlayer from 'react-spotify-web-playback';
+
 const StretchWorkout = () => {
   const [btnStatusStart, setBtnStatusStart] = React.useState(false);
   const [btnStatusStop, setBtnStatusStop] = React.useState(true);
@@ -66,7 +68,7 @@ const StretchWorkout = () => {
   return (
     
     isAuthenticated && (
-    <div className="App">
+    <div >
       <Link to="/">
         <img src={backArrowPic} alt="backArrowPic" className="backArrowPic" />
       </Link>
@@ -111,7 +113,25 @@ const StretchWorkout = () => {
         </div>
 
       </div>
+      <div className="spotify-container">
+      <SpotifyPlayer
+        styles={{
+    activeColor: 'yellow',
+    bgColor: 'white',
+    color: 'black',
+    loaderColor: 'purple',
+    sliderColor: 'purple',
+    trackArtistColor: 'black',
+    trackNameColor: 'black',
+    height: 'auto',
+    width: '150%'
+  }}
+  token="BQCoFPywExdKcnYl3dDp6xW2VnBgZGWB3DQesvXDoc7ChjrE_cfBkLmmowwfAoKfsnKENFbF_fKMQy52poVnckyGo60o3Lmyj8UIP-Ka2ZD_P8mb-vEG-G53XvMVuRLcku8IfSUNIUxoCA1UCKL9_4jqO9_StQd24RHSgaUms7GmxSnb1ar3eLu4goCgb5x06cK-0RRk2NAYnnqQvDnsRtpGVobdYQY"
+  uris={['spotify:playlist:1hbvNy48i7cJ5rVn2KOkzl']}
+/>;
+</div>
     </div>
+    
     )
   );
 };
