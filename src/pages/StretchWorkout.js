@@ -126,7 +126,7 @@ const StretchWorkout = () => {
     height: 'auto',
     width: '150%'
   }}
-  token="BQCoFPywExdKcnYl3dDp6xW2VnBgZGWB3DQesvXDoc7ChjrE_cfBkLmmowwfAoKfsnKENFbF_fKMQy52poVnckyGo60o3Lmyj8UIP-Ka2ZD_P8mb-vEG-G53XvMVuRLcku8IfSUNIUxoCA1UCKL9_4jqO9_StQd24RHSgaUms7GmxSnb1ar3eLu4goCgb5x06cK-0RRk2NAYnnqQvDnsRtpGVobdYQY"
+  token="BQARVg2T1XUbTE26jXFyaF5qev0gcEsurmm_QMSbafyoLzjp_Comhbqivv2dzQR6byxUTbokZeKuyViZMZvs9hLZsu4k-QTYLzb_V6u84PQODh2jzyMH0ZDUthqE4asYXalXWDqSWjLv62nGX3IJ7trlyKYQTqljiv8mFSZmNORNtVZccJpHsBOzR8GhJj0dMaHpaJ4eRvIYUcQcxXiPDo0SX_ulvq8"
   uris={['spotify:playlist:1hbvNy48i7cJ5rVn2KOkzl']}
 />;
 </div>
