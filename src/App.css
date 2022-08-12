@@ -89,22 +89,23 @@ img {
 
 
 .menu-container {
+  height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: auto;
-  
+ 
 }
 
 .logoutBtn {
-  width: 60vw;
-  height: auto;
+  width: 30vw;
+  height: 5vh;
   background-color: #ead5e6;
   border-radius: 10px;
   border-style: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .profilePic{
@@ -138,7 +139,7 @@ a{
 margin: 0;
 padding:0;
 width: 80vw;
-height: 45vh;
+height: 30vh;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -226,5 +227,50 @@ height: 10vh;
 padding: 0;
  
  }
+
+ .disconnectSpotify{
+  width: 30vw;
+  height: 5vh;
+  background-color: #80b71a6c;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  margin-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .spotify{
+  width: 100%;
+height: 20vh;
+padding-top: 10%;
+
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content:end;
+ }
+
+ .spotify-container{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
  
+ }
+ 
+ .spotify-button{
+  display: flex;
+  align-items:baseline;
+  justify-content: center;
+ padding: 0;
+ margin: 0;
+ }
+
+ .spotifyPlayer{
+  margin-top: 20px;
+  background-color: aqua;
+ }
 

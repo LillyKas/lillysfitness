@@ -7,6 +7,8 @@ const Overview = () => {
 
     const {loginWithRedirect, isAuthenticated} = useAuth0();
 
+ 
+
   return (
 
     !isAuthenticated &&
@@ -14,7 +16,9 @@ const Overview = () => {
     <img src={startPic} alt="startPic" className='yogaPic' />
     <h1 className='headline'>Are you ready to workout?</h1>
     </div>
-  ))
+  )
+  
+  )
 }
 
 export default Overview

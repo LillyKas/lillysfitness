@@ -20,6 +20,8 @@ function App() {
 
  if(isLoading) return <div>Loading</div>
 
+
+
   return (
     <div className="App">
     <div className="container">
@@ -28,10 +30,12 @@ function App() {
       <Routes>      
         <Route path="/" element={ <HomePage /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
+        <Route path="/spotifyconnected" element={ <HomePage /> } />
       </Routes>
       <div className='logBtn'>
       <LoginButton />
       </div>
+     
     </div>
     </div>
     

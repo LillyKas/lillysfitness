@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import timesUpSound from "../sounds/timesUp.mp3";
+import timesUpSound from "../sounds/beep.wav";
 import "../App.css";
 import allExercises from "../stretchingPam.json";
 import { Link } from "react-router-dom";
@@ -8,10 +8,9 @@ import playBtnPic from "../pictures/play-button.png";
 import stopBtnPic from "../pictures/pause.png";
 import ProgressBar from "../components/progress-bar.component";
 import {useAuth0} from '@auth0/auth0-react';
+import Spotify from "../components/Spotify";
 
-import SpotifyPlayer from 'react-spotify-web-playback';
-
-const StretchWorkout = () => {
+const StretchWorkout = (props) => {
   const [btnStatusStart, setBtnStatusStart] = React.useState(false);
   const [btnStatusStop, setBtnStatusStop] = React.useState(true);
   const [exercise, setExercise] = useState(allExercises);
@@ -21,6 +20,9 @@ const StretchWorkout = () => {
   const [timer, setTimer] = React.useState(exercise[number].duration);
 
   const {isAuthenticated} = useAuth0();
+
+  const {token} = props;
+ 
 
   //Use RefHook to make it stop at 0
   //stores reference to SetInterval --> clear when timer hits 0
@@ -65,13 +67,15 @@ const StretchWorkout = () => {
     setBtnStatusStop(true);
   };
 
+ 
+
   return (
     
     isAuthenticated && (
     <div >
-      <Link to="/">
-        <img src={backArrowPic} alt="backArrowPic" className="backArrowPic" />
-      </Link>
+      
+       
+     
 
       <div className="exercise-container">
         <img
@@ -113,23 +117,7 @@ const StretchWorkout = () => {
         </div>
 
       </div>
-      <div className="spotify-container">
-      <SpotifyPlayer
-        styles={{
-    activeColor: 'yellow',
-    bgColor: 'white',
-    color: 'black',
-    loaderColor: 'purple',
-    sliderColor: 'purple',
-    trackArtistColor: 'black',
-    trackNameColor: 'black',
-    height: 'auto',
-    width: '150%'
-  }}
-  token="BQARVg2T1XUbTE26jXFyaF5qev0gcEsurmm_QMSbafyoLzjp_Comhbqivv2dzQR6byxUTbokZeKuyViZMZvs9hLZsu4k-QTYLzb_V6u84PQODh2jzyMH0ZDUthqE4asYXalXWDqSWjLv62nGX3IJ7trlyKYQTqljiv8mFSZmNORNtVZccJpHsBOzR8GhJj0dMaHpaJ4eRvIYUcQcxXiPDo0SX_ulvq8"
-  uris={['spotify:playlist:1hbvNy48i7cJ5rVn2KOkzl']}
-/>;
-</div>
+
     </div>
     
     )
