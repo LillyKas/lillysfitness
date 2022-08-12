@@ -32,7 +32,7 @@ function HomePage() {
   };
 
   return (
-    /* isAuthenticated && ( */
+     isAuthenticated && ( 
       <div>
         <div className="greeting-container">
           
@@ -98,7 +98,7 @@ function HomePage() {
           <Spotify  />
           <LogoutButton />
       </div>
-    
+     )
   );
 }
 
