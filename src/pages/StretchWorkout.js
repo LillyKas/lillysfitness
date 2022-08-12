@@ -52,7 +52,6 @@ const StretchWorkout = (props) => {
      
     } else if (timer === 0 && number > 22) {
       clear();
-
       setTimer(0);
       setNumber(number + 1);
       audio.play();
@@ -66,6 +65,14 @@ const StretchWorkout = (props) => {
     setBtnStatusStart(false);
     setBtnStatusStop(true);
   };
+
+  React.useEffect(() => {
+    if (timer === 1 ) {
+      
+      audio.play();
+    } 
+    
+  }, [timer]);
 
   return (
     isAuthenticated && (
