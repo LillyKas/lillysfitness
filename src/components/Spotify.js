@@ -108,7 +108,7 @@ function Spotify() {
         <div className="spotify-container">
         <SpotifyInWorkout token={token} />
         <div className="spotify-button">
-     
+        <LogoutButton />
         <button className="disconnectSpotify" onClick={logoutSpotify}>
           Disconnect Spotify
         </button>

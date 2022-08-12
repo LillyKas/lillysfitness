@@ -96,7 +96,7 @@ function HomePage() {
         
       
           <Spotify  />
-          <LogoutButton />
+         
       </div>
      )
   );
