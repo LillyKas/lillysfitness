@@ -60,7 +60,7 @@ function Spotify() {
   //Disconnect from Spotify and remove Token from localStorage
   const logoutSpotify = () => {
     setToken("");
-    window.localStorage.removeItem("token");
+    
   };
 
   //Search Function for Spotify

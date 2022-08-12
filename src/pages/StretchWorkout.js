@@ -35,6 +35,7 @@ const StretchWorkout = (props) => {
   const startTimer = () => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
+      audio.play();
     }, 1000);
     setBtnStatusStart(true);
     setBtnStatusStop(false);
