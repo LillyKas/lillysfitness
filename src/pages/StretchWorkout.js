@@ -67,7 +67,7 @@ const StretchWorkout = (props) => {
   };
 
   React.useEffect(() => {
-    if (timer === 1 ) {
+    if (timer <= 1 ) {
       
       audio.play();
     } 
