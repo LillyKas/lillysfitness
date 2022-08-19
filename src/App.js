@@ -11,6 +11,7 @@ import LogoutButton from './components/LogoutButton';
 import OverviewComponent from "./pages/Overview";
 
 import startPic from './pictures/yoga.gif'; 
+import Spotify from './components/Spotify';
 
  
 function App() {
@@ -30,7 +31,7 @@ function App() {
       <Routes>      
         <Route path="/" element={ <HomePage /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
-        <Route path="/spotifyconnected" element={ <HomePage /> } />
+        <Route path="/spotifyconnected" element={ <Spotify /> } />
         
       </Routes>
       <div className='logBtn'>

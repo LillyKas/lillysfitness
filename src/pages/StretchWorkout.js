@@ -47,7 +47,7 @@ const StretchWorkout = (props) => {
 
       setTimer(exercise[number].duration);
       setNumber(number + 1);
-
+      audio.play();
       startTimer();
      
     } else if (timer === 0 && number > 22) {

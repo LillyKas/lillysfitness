@@ -8,7 +8,7 @@ const SpotifyInWorkout = (props) => {
   return (
     <div >   <SpotifyPlayer
     className='spotifyPlayer'
-    token="BQCFLMwrDBM_bTUm1C0aUTWNTz1C8AOt9NGT7eay4z34qblfDnK7B39whmHu8XITo2lVkReJEFtUPxlzRaqQrY13Kb39iLrM0Uu1q8oagjC0KkFYcudwwEl7mWXsic_y8K91Y4TFsZ71ru9G932yggP-Oz4cIrnfX_i0OW3AU9DbtBr287qsNMR-H3hsWZ5fRd6V"
+    token="BQBJ8KExXgpfQehoiAZyD9QeW9kAbdRo0vRlrGYtP0DBY_bSFOoxoFGljOpr9UTg1OPllHmRALJR6Hg3n-1Z9g0ChdA_pHwW3RyBeAzhMQOkJ6SrFOiA42O1T2GgyMPfTaub_6zgUtiv1QTyJFG_nYilPryEHIJ0R1uOtpCLAlazMDEZnqJq8htKzzbaIz9LZBzSUdqly5EnrzZGaDdKuPTxv4OMd6E"
     uris={['spotify:playlist:1hbvNy48i7cJ5rVn2KOkzl']}
   />;
     </div>
