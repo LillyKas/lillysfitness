@@ -12,7 +12,7 @@ function Spotify() {
   //------------------SPOTIFY CONNECTION START------------------------------
   //Authentication Credentials for Spotify Connection
   const CLIENT_ID = "4cf9d70821b1442497e46fec1e9b896c";
-  const REDIRECT_URI = "http://localhost:3000/spotifyconnected";
+  const REDIRECT_URI = "https://lillysfitness.herokuapp.com/spotifyconnected";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
   const SCOPES = [
