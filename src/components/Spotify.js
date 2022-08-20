@@ -96,13 +96,6 @@ function Spotify() {
 
   return (
 
-    <div>
-    <div> 
-    <h1>You succefully connceted Spotify!</h1>
-    <Link to="/">
-            Go and choose your workout
-          </Link>
-    </div>
     
     <div className="spotify">
       {!token ? (
@@ -142,7 +135,7 @@ function Spotify() {
     
     </div>
 
-</div>
+
   );
 }
 
