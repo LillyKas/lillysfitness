@@ -8,7 +8,7 @@ const SpotifyInWorkout = (props) => {
   return (
     <div >   <SpotifyPlayer
     className='spotifyPlayer'
-    token='token'
+    token={token}
     uris={['spotify:playlist:1hbvNy48i7cJ5rVn2KOkzl']}
   />;
     </div>
