@@ -5,6 +5,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 
 import HomePage from "./pages/HomePage";
+import homeWithSpotify from "./pages/homeWithSpotify";
 import StretchWorkout from "./pages/StretchWorkout";
 import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogoutButton';
@@ -31,7 +32,7 @@ function App() {
       <Routes>      
         <Route path="/" element={ <HomePage /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
-        <Route path="/spotifyconnected" element={ <Spotify /> } />
+        <Route path="/spotifyconnected" element={ <homeWithSpotify /> } />
         
       </Routes>
       <div className='logBtn'>
