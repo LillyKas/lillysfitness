@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Link } from "react";
 
 import axios from "axios";
 import SpotifyPlayer from "react-spotify-web-playback";
@@ -94,6 +94,12 @@ function Spotify() {
   };
 
   return (
+
+    <div>
+    <div> 
+    <h1>You succefully connceted Spotify!</h1>
+    <Link to="/">Choose a workout</Link>
+    </div>
     
     <div className="spotify">
       {!token ? (
@@ -133,7 +139,7 @@ function Spotify() {
     
     </div>
 
-
+</div>
   );
 }
 
