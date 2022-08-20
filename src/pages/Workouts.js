@@ -11,7 +11,7 @@ import LogoutButton from "../components/LogoutButton";
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
 
-function HomePage() {
+function Workouts() {
   //Authentication to App
   const { user, isAuthenticated } = useAuth0();
 
@@ -102,4 +102,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Workouts;
