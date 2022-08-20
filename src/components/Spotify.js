@@ -1,4 +1,5 @@
-import React, { useState, useEffect, Link } from "react";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import axios from "axios";
 import SpotifyPlayer from "react-spotify-web-playback";
@@ -98,7 +99,9 @@ function Spotify() {
     <div>
     <div> 
     <h1>You succefully connceted Spotify!</h1>
-    <Link to="/">Choose a workout</Link>
+    <Link to="/">
+            Go and choose your workout
+          </Link>
     </div>
     
     <div className="spotify">
