@@ -31,7 +31,7 @@ function App() {
       <Routes>      
         <Route path="/" element={ <Workouts /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
-        <Route path="/spotifyconnected" element={ <Workouts /> } />
+        <Route path="/spotifyconnected" element={ <Spotify /> } />
         
       </Routes>
       <div className='logBtn'>
