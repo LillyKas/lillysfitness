@@ -95,7 +95,7 @@ function HomePage() {
           </div>
         
       
-          <Spotify  />
+          
          
       </div>
      )
