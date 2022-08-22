@@ -12,6 +12,7 @@ import OverviewComponent from "./pages/Overview";
 
 import startPic from './pictures/yoga.gif'; 
 import Spotify from './components/Spotify';
+import Overview from './pages/Overview';
 
  
 function App() {
@@ -29,9 +30,9 @@ function App() {
   
 <OverviewComponent />
       <Routes>      
-        <Route path="/" element={ <Workouts /> } />
+        <Route path="/" element={ <Overview /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
-        <Route path="/spotifyconnected" element={ <Spotify /> } />
+        <Route path="/spotifyconnected" element={ <Workouts /> } />
         
       </Routes>
       <div className='logBtn'>

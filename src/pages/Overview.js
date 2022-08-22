@@ -11,7 +11,7 @@ const Overview = () => {
  
 
   return (
-<div>
+
     !isAuthenticated &&
    ( <div className="container" >
     <img src={startPic} alt="startPic" className='yogaPic' />
@@ -19,13 +19,7 @@ const Overview = () => {
     </div>
   )
 
-isAuthenticated &&
-  ( <div className="container" >
-   <Spotify  />
-   </div>
- )
 
- </div>
   
   
   )
