@@ -35,7 +35,10 @@ function App() {
         <Route path="/spotifyconnected" element={ <Workouts /> } />
         
       </Routes>
-    
+      <div className='logBtn'>
+      <LoginButton />
+      </div>
+     
     </div>
     </div>
     
