@@ -30,7 +30,7 @@ function App() {
   
 <OverviewComponent />
       <Routes>      
-        <Route path="/" element={ <Overview /> } />
+        <Route path="/" element={ <Workouts /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
         <Route path="/spotifyconnected" element={ <Workouts /> } />
         
