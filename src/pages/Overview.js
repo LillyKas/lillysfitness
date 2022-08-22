@@ -12,7 +12,7 @@ const Overview = () => {
  
 
   return (
-    <div>
+    
 
     
 
@@ -21,13 +21,16 @@ const Overview = () => {
     <img src={startPic} alt="startPic" className='yogaPic' />
     <h1 className='headline'>Are you ready to workout?</h1>
     </div>
-  )
+  )(
 
-  <div className='logBtn'>
-      <LoginButton />
-      </div>
-</div>
   
+  isAuthenticated &&
+  ( 
+    <div className='logBtn'>
+        <LoginButton />
+        </div>
+ )
+  )
   
   )
 }
