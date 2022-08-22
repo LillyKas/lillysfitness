@@ -3,6 +3,7 @@ import startPic from '../pictures/yoga.gif';
 import '../App.css';
 import {useAuth0} from '@auth0/auth0-react';
 import Spotify from "../components/Spotify";
+import LoginButton from './components/LoginButton';
 
 const Overview = () => {
 
@@ -13,7 +14,7 @@ const Overview = () => {
   return (
     <div>
 
-    <h1>lalalala</h1>
+    
 
     !isAuthenticated &&
    ( <div className="container" >
@@ -22,8 +23,9 @@ const Overview = () => {
     </div>
   )
 
-
-
+  <div className='logBtn'>
+      <LoginButton />
+      </div>
 </div>
   
   
