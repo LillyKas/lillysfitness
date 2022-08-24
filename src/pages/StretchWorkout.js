@@ -44,7 +44,7 @@ const StretchWorkout = (props) => {
   React.useEffect(() => {
     if (timer === 0 && number <= 21) {
       clear();
-
+      audio.play();
       setTimer(exercise[number].duration);
       setNumber(number + 1);
       startTimer();
@@ -65,13 +65,7 @@ const StretchWorkout = (props) => {
     setBtnStatusStop(true);
   };
 
-  React.useEffect(() => {
-    if (timer <= 1 ) {
-      
-      audio.play();
-    } 
-    
-  }, [timer]);
+
 
   return (
     isAuthenticated && (
