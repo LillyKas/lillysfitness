@@ -1,7 +1,6 @@
 
 import { useAuth0 } from "@auth0/auth0-react";
 import stretchPic from "../pictures/Stretching.png";
-import startPic from '../pictures/yoga.gif'; 
 import fullBodyPic from "../pictures/Full Body.png";
 import warmUpPic from "../pictures/Warm Up.png";
 import backArrowPic from "../pictures/left-arrow.png";
@@ -12,7 +11,7 @@ import LogoutButton from "../components/LogoutButton";
 
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
-import OverviewComponent from "./Overview";
+import OverviewComponent from "./pages/Overview";
 
 function Workouts() {
   //Authentication to App
@@ -35,14 +34,8 @@ function Workouts() {
   };
 
   return (
-  
 
-    !isAuthenticated &&
-   ( 
-   <OverviewComponent />
-  )
 
-   (
 
      isAuthenticated && ( 
       <div>
@@ -112,8 +105,8 @@ function Workouts() {
       </div>
      )
  
-    
-   )
+ 
+  
   );
 }
 
