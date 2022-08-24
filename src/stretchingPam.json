@@ -3,13 +3,15 @@
     "number": "1",
     "nameOfExercise": "stretch up and down",
     "picture":"./../stretch_poses/upAndDown.png",
-    "duration": 30
+    "duration": 30,
+    "sound": "./sounds/beep.wav"
   },
   {
     "number": "2",
     "nameOfExercise": "leg stretch side to side",
     "picture":"./../stretch_poses/sideToSide.png",
-    "duration": 30
+    "duration": 30,
+    "sound": "./sounds/beep.wav"
   },
   {
     "number": "3",

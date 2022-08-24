@@ -118,6 +118,9 @@ const StretchWorkout = (props) => {
             />
           </div>
         </div>
+        <div>
+        <audio ref="audio_tag" src={exercise[number].sound} controls autoPlay/>
+      </div>
       </div>
     )
   );
