@@ -9,10 +9,10 @@ import React, { useState, useEffect } from "react";
 
 
 import LogoutButton from "../components/LogoutButton";
-import LoginButton from '../components/LoginButton';
+
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
-
+import OverviewComponent from "./pages/Overview";
 
 function Workouts() {
   //Authentication to App
@@ -38,13 +38,8 @@ function Workouts() {
   
 
     !isAuthenticated &&
-   ( <div className="container" >
-    <img src={startPic} alt="startPic" className='yogaPic' />
-    <h1 className='headline'>Are you ready to workout?</h1>
-    <div className='logBtn'>
-      <LoginButton />
-      </div>
-    </div>
+   ( 
+   <OverviewComponent />
   )
 
    (
