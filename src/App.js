@@ -20,7 +20,7 @@ function App() {
  const {isLoading} = useAuth0();
  const { user, isAuthenticated} = useAuth0();
 
- if(isLoading) return <div>Loading</div>
+ if(isLoading) return <div>Loading...</div>
 
 
 
@@ -32,7 +32,7 @@ function App() {
       <Routes>      
         <Route path="/" element={ <Workouts /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
-        <Route path="/spotifyconnected" element={ <Workouts /> } />
+        <Route path="/spotifyconnected" element={ <Spotify /> } />
         
       </Routes>
       <div className='logBtn'>
