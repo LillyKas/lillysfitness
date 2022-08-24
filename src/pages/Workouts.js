@@ -12,7 +12,7 @@ import LogoutButton from "../components/LogoutButton";
 
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
-import OverviewComponent from "./pages/Overview";
+import OverviewComponent from "./Overview";
 
 function Workouts() {
   //Authentication to App
