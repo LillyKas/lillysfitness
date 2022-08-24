@@ -28,7 +28,7 @@ function App() {
     <div className="App">
     <div className="container">
   
-
+    <Workouts />
       <Routes>      
         <Route path="/" element={ <Workouts /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
