@@ -18,7 +18,8 @@ const StretchWorkout = (props) => {
   const [number, setNumber] = useState(0);
   const audio = new Audio(timesUpSound);
 
-  const audioCheck = new Audio(phoneSound);
+  const audioCheck = new Audio();
+  audioCheck.autoplay = true;
 
   const [timer, setTimer] = React.useState(exercise[number].duration);
 
@@ -41,7 +42,7 @@ const StretchWorkout = (props) => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
     }, 1000);
-    audioCheck.play();
+    audioCheck.src = timesUpSound
     setBtnStatusStart(true);
     setBtnStatusStop(false);
     return () => clear();
@@ -53,8 +54,7 @@ const StretchWorkout = (props) => {
       clear();
       console.log("audio tick if")
       // later on when you actually want to play a sound at any point without user interaction
-
-
+      audioCheck.src = timesUpSound
       setTimer(exercise[number].duration);
       setNumber(number + 1);
       startTimer();
@@ -119,7 +119,7 @@ const StretchWorkout = (props) => {
           </div>
         </div>
         <div>
-        <audio  src={exercise[number].sound} controls autoPlay/>
+       
       </div>
       </div>
     )
