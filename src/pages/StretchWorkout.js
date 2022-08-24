@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import timesUpSound from "../sounds/beep.wav";
+import phoneSound from "../sounds/phone.mp3";
 import "../App.css";
 import allExercises from "../stretchingPam.json";
 import { Link } from "react-router-dom";
@@ -17,6 +18,8 @@ const StretchWorkout = (props) => {
   const [number, setNumber] = useState(0);
   const audio = new Audio(timesUpSound);
 
+  const audioCheck = new Audio(phoneSound);
+
   const [timer, setTimer] = React.useState(exercise[number].duration);
 
   const { isAuthenticated } = useAuth0();
@@ -24,8 +27,7 @@ const StretchWorkout = (props) => {
   const { token } = props;
 
   
-  const soundEffect = new Audio();
-soundEffect.autoplay = true;
+
 
   //Use RefHook to make it stop at 0
   //stores reference to SetInterval --> clear when timer hits 0
@@ -39,8 +41,7 @@ soundEffect.autoplay = true;
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
     }, 1000);
-    soundEffect.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
-
+    audioCheck.play();
     setBtnStatusStart(true);
     setBtnStatusStop(false);
     return () => clear();
@@ -52,7 +53,7 @@ soundEffect.autoplay = true;
       clear();
       console.log("audio tick if")
       // later on when you actually want to play a sound at any point without user interaction
-soundEffect.src = 'path/to/file.mp3';
+
 
       setTimer(exercise[number].duration);
       setNumber(number + 1);
@@ -62,7 +63,7 @@ soundEffect.src = 'path/to/file.mp3';
       clear();
       setTimer(0);
       setNumber(number + 1);
-      console.log("audio tick else")
+     
     }
   }, [timer]);
 
