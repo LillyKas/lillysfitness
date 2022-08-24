@@ -23,6 +23,10 @@ const StretchWorkout = (props) => {
 
   const { token } = props;
 
+  
+  const soundEffect = new Audio();
+soundEffect.autoplay = true;
+
   //Use RefHook to make it stop at 0
   //stores reference to SetInterval --> clear when timer hits 0
   const id = React.useRef(null);
@@ -35,6 +39,8 @@ const StretchWorkout = (props) => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
     }, 1000);
+    soundEffect.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
+
     setBtnStatusStart(true);
     setBtnStatusStop(false);
     return () => clear();
@@ -44,8 +50,10 @@ const StretchWorkout = (props) => {
   React.useEffect(() => {
     if (timer === 0 && number <= 21) {
       clear();
-      audio.play();
       console.log("audio tick if")
+      // later on when you actually want to play a sound at any point without user interaction
+soundEffect.src = 'path/to/file.mp3';
+
       setTimer(exercise[number].duration);
       setNumber(number + 1);
       startTimer();
@@ -54,7 +62,6 @@ const StretchWorkout = (props) => {
       clear();
       setTimer(0);
       setNumber(number + 1);
-      audio.play();
       console.log("audio tick else")
     }
   }, [timer]);
@@ -66,6 +73,8 @@ const StretchWorkout = (props) => {
     setBtnStatusStart(false);
     setBtnStatusStop(true);
   };
+
+
 
 
 
