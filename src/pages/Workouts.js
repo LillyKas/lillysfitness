@@ -11,7 +11,7 @@ import LogoutButton from "../components/LogoutButton";
 
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
-import OverviewComponent from "./pages/Overview";
+
 
 function Workouts() {
   //Authentication to App
