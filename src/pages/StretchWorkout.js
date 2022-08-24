@@ -45,6 +45,7 @@ const StretchWorkout = (props) => {
     if (timer === 0 && number <= 21) {
       clear();
       audio.play();
+      console.log("audio tick if")
       setTimer(exercise[number].duration);
       setNumber(number + 1);
       startTimer();
@@ -54,6 +55,7 @@ const StretchWorkout = (props) => {
       setTimer(0);
       setNumber(number + 1);
       audio.play();
+      console.log("audio tick else")
     }
   }, [timer]);
 
