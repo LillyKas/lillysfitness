@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import timesUpSound from "../sounds/beep.wav";
-import countdown from "../sounds/countdown_v2.mp3";
+import countdown from "../sounds/Countdown_30Sek_v1.mp3";
 import "../App.css";
 import allExercises from "../stretchingPam.json";
 import { Link } from "react-router-dom";
