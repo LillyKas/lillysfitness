@@ -52,12 +52,9 @@ const StretchWorkout = (props) => {
   React.useEffect(() => {
     if (timer === 0 && number <= 21) {
       clear();
-      console.log("audio tick if")
-      // later on when you actually want to play a sound at any point without user interaction
-
       setTimer(exercise[number].duration);
       setNumber(number + 1);
-
+      startTimer();
      
     } else if (timer === 0 && number > 22) {
       clear();
