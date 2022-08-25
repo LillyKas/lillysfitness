@@ -3,7 +3,7 @@ import timesUpSound from "../sounds/beep.wav";
 import countdown from "../sounds/countdown_v2.mp3";
 import "../App.css";
 import allExercises from "../stretchingPam.json";
-
+import { Link } from "react-router-dom";
 import backArrowPic from "../pictures/left-arrow.png";
 import playBtnPic from "../pictures/play-button.png";
 import stopBtnPic from "../pictures/pause.png";
@@ -16,8 +16,9 @@ const StretchWorkout = (props) => {
   const [btnStatusStop, setBtnStatusStop] = React.useState(true);
   const [exercise, setExercise] = useState(allExercises);
   const [number, setNumber] = useState(0);
-  
   const audio = new Audio(countdown);
+
+
 
   const [timer, setTimer] = React.useState(exercise[number].duration);
 
@@ -39,8 +40,9 @@ const StretchWorkout = (props) => {
   const startTimer = () => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
+ 
     }, 1000);
-  audio.play();
+  audio.play()
       setBtnStatusStart(true);
     setBtnStatusStop(false);
     return () => clear();
@@ -51,6 +53,8 @@ const StretchWorkout = (props) => {
     if (timer === 0 && number <= 21) {
       clear();
       console.log("audio tick if")
+      // later on when you actually want to play a sound at any point without user interaction
+
       setTimer(exercise[number].duration);
       setNumber(number + 1);
 
