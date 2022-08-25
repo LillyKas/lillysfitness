@@ -68,6 +68,7 @@ const StretchWorkout = (props) => {
   const stopTimer = () => {
     clear();
     audio.pause();
+    audio.currentTime = 0;
     console.log("test music btn")
     setBtnStatusStart(false);
     setBtnStatusStop(true);
