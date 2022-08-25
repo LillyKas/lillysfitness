@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react";
 import timesUpSound from "../sounds/beep.wav";
-import phoneSound from "../sounds/phone.mp3";
+import countdown from "../sounds/countdown_v2.mp3";
 import "../App.css";
 import allExercises from "../stretchingPam.json";
-import { Link } from "react-router-dom";
+
 import backArrowPic from "../pictures/left-arrow.png";
 import playBtnPic from "../pictures/play-button.png";
 import stopBtnPic from "../pictures/pause.png";
 import ProgressBar from "../components/progress-bar.component";
 import { useAuth0 } from "@auth0/auth0-react";
-import Spotify from "../components/Spotify";
+
 
 const StretchWorkout = (props) => {
   const [btnStatusStart, setBtnStatusStart] = React.useState(false);
   const [btnStatusStop, setBtnStatusStop] = React.useState(true);
   const [exercise, setExercise] = useState(allExercises);
   const [number, setNumber] = useState(0);
-  const audio = new Audio(timesUpSound);
-
-  const audioCheck = new Audio();
-  audioCheck.autoplay = true;
+  
+  const audio = new Audio(countdown);
 
   const [timer, setTimer] = React.useState(exercise[number].duration);
 
@@ -41,9 +39,8 @@ const StretchWorkout = (props) => {
   const startTimer = () => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
-      audioCheck.src = timesUpSound
     }, 1000);
-  
+  audio.play();
       setBtnStatusStart(true);
     setBtnStatusStop(false);
     return () => clear();
@@ -54,11 +51,9 @@ const StretchWorkout = (props) => {
     if (timer === 0 && number <= 21) {
       clear();
       console.log("audio tick if")
-      // later on when you actually want to play a sound at any point without user interaction
-      audioCheck.src = timesUpSound
       setTimer(exercise[number].duration);
       setNumber(number + 1);
-      startTimer();
+
      
     } else if (timer === 0 && number > 22) {
       clear();
@@ -71,7 +66,7 @@ const StretchWorkout = (props) => {
   //Stop Timer on Button click -->  stopBtn
   const stopTimer = () => {
     clear();
-    audio.play();
+    audio.pause();
     setBtnStatusStart(false);
     setBtnStatusStop(true);
   };
