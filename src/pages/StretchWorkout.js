@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import timesUpSound from "../sounds/beep.wav";
-import countdown from "../sounds/Countdown_30Sek_v1.mp3";
+import countdown from "../sounds/test_music.wav";
 import "../App.css";
 import allExercises from "../stretchingPam.json";
 import { Link } from "react-router-dom";
@@ -42,7 +42,7 @@ const StretchWorkout = (props) => {
       setTimer((time) => time - 1);
  
     }, 1000);
-  audio.play()
+     audio.play()
       setBtnStatusStart(true);
     setBtnStatusStop(false);
     return () => clear();
@@ -68,6 +68,7 @@ const StretchWorkout = (props) => {
   const stopTimer = () => {
     clear();
     audio.pause();
+    console.log("test music btn")
     setBtnStatusStart(false);
     setBtnStatusStop(true);
   };
