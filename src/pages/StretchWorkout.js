@@ -40,9 +40,7 @@ const StretchWorkout = (props) => {
   const startTimer = () => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
- 
     }, 1000);
-     audio.play()
       setBtnStatusStart(true);
     setBtnStatusStop(false);
     return () => clear();
@@ -55,7 +53,6 @@ const StretchWorkout = (props) => {
       setTimer(exercise[number].duration);
       setNumber(number + 1);
       startTimer();
-     
     } else if (timer === 0 && number > 22) {
       clear();
       setTimer(0);
@@ -67,14 +64,17 @@ const StretchWorkout = (props) => {
   //Stop Timer on Button click -->  stopBtn
   const stopTimer = () => {
     clear();
-    audio.pause();
-    audio.currentTime = 0;
+    audio.stop()
     console.log("test music btn")
     setBtnStatusStart(false);
     setBtnStatusStop(true);
   };
 
 
+const startBtnFunction = () => {
+  audio.play();
+  startTimer();
+}
 
 
 
@@ -99,7 +99,7 @@ const StretchWorkout = (props) => {
           </div>
         </div>
         <div className="button-container">
-          <div onClick={startTimer} className="playBtn-container">
+          <div onClick={startBtnFunction} className="playBtn-container">
             <img
               src={playBtnPic}
               alt="btnStart"
