@@ -7,6 +7,7 @@ import backArrowPic from "../pictures/left-arrow.png";
 import React, { useState, useEffect } from "react";
 
 
+
 import LogoutButton from "../components/LogoutButton";
 
 import Spotify from "../components/Spotify";
@@ -71,6 +72,7 @@ function Workouts() {
           <div >
           <Spotify  />
         </div>
+        <LogoutButton />
           </div>
         
       

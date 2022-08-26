@@ -7,7 +7,7 @@ import SpotifyInWorkout from "./SpotifyInWorkout"
 import StretchWorkout from "./../pages/StretchWorkout";
 import "../App.css";
 
-import LogoutButton from "../components/LogoutButton";
+
 
 function Spotify() {
   //------------------SPOTIFY CONNECTION START------------------------------
@@ -110,7 +110,6 @@ function Spotify() {
         <div className="spotify-container">
         <SpotifyInWorkout token={token} />
         <div className="spotify-button">
-        <LogoutButton />
         <button className="disconnectSpotify" onClick={logoutSpotify}>
           Disconnect Spotify
         </button>
