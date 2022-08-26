@@ -60,36 +60,7 @@ function Workouts() {
                 alt="stretchPic"
                 className="workoutPic"
                 onClick={showStretchWorkout}
-              />
-                  <img
-                src={stretchPic}
-                alt="stretchPic"
-                className="workoutPic"
-                onClick={showStretchWorkout}
-              />
-                  <img
-                src={stretchPic}
-                alt="stretchPic"
-                className="workoutPic"
-                onClick={showStretchWorkout}
-              />
-                    <img
-                src={stretchPic}
-                alt="stretchPic"
-                className="workoutPic"
-                onClick={showStretchWorkout}
-              />
-                    <img
-                src={stretchPic}
-                alt="stretchPic"
-                className="workoutPic"
-                onClick={showStretchWorkout}
-              />
-
-                
-
-              {/*    <img src={fullBodyPic} alt="stretchPic" className="workoutPic" />
-            <img src={warmUpPic} alt="stretchPic" className="workoutPic" /> */}
+              />   
             </div>
           )}
           {stretchWorkout && (
@@ -97,10 +68,13 @@ function Workouts() {
           <StretchWorkout />
           </div>
           )}
+          <div >
+          <Spotify  />
+        </div>
           </div>
         
       
-          <Spotify  />
+
          
       </div>
      )
