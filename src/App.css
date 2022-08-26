@@ -241,14 +241,13 @@ font-weight: bold;
 }
 
 .disconnectSpotify {
-  width: 30vw;
+  width: 70vw;
   height: 5vh;
   background-color: #80b71a6c;
   border-radius: 10px;
   border-style: none;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  margin-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
