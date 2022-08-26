@@ -10,7 +10,7 @@
     "number": "2",
     "nameOfExercise": "leg stretch side to side",
     "picture":"./../stretch_poses/sideToSide.png",
-    "duration": 30,
+    "duration": 60,
     "sound": "./sounds/beep.wav"
   },
   {

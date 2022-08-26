@@ -87,7 +87,6 @@ img {
   border-radius: 10px;
 }
 
-
 .menu-container {
   height: 60vh;
   display: flex;
@@ -95,7 +94,6 @@ img {
   align-items: center;
   justify-content: center;
   width: auto;
- 
 }
 
 .logoutBtn {
@@ -108,127 +106,137 @@ img {
   font-size: 12px;
 }
 
-.profilePic{
+.profilePic {
   width: 50px;
   height: 50px;
   border-radius: 100%;
 }
 
-a{
+a {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   text-decoration: none;
   color: black;
 }
 
-.backArrowPic{
-  width:20px;
-  height:20px;
+.backArrowPic {
+  width: 20px;
+  height: 20px;
 }
-.animatedPic{
+.animatedPic {
   width: 200px;
   height: 200px;
 }
 
-.exercisePic{
-  width:200px;
+.exercisePic {
+  width: 200px;
   height: auto;
 }
 
-.exercise-container{
-margin: 0;
-padding:0;
-width: 80vw;
-height: 30vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
-font-family: "Barlow Condensed", sans-serif;
-font-size: 24px;
-background-image: url("./pictures/background-exercise.png");
-background-size: contain;
-background-repeat: no-repeat;
-}
-
-.exercise-name{
-  margin-top: 15px;
-  font-size: 32px;
-
-}
-
-.timer-container{
+.workout-container {
+  margin-top: 20vh;
+  padding: 0;
   display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 24px;
+
+  
 }
 
-.container-info{
-  margin-top: -15%;
+.exercise-name {
+  margin-top: 5vh;
+  font-size: 56px;
 }
 
-.time-counter{
+.timer-container {
+ 
+    display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  width: 100%;
+  height: auto;
+
+}
+
+.timer {
+  font-size: 24px;
+}
+
+
+
+
+.container-info {
+
 display: flex;
 flex-direction: column;
-align-items: center;
-justify-content: space-evenly;
-margin: 10%;
+align-items:center;
+justify-content:center;
+height: auto;
+width: 100%;
+
+
+
 }
 
-.time-counter-text{
+
+
+.time-counter-text {
   font-family: "Montserrat", sans-serif;
   font-size: 64px;
 }
 
-.button-container{
+.button-container {
   display: flex;
-align-items: center;
-justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+
+  height: auto;
+width: 100%;
+margin: 10%;
 }
 
-.playBtn-container{
- background-color: #FFD366;
- width: 150px;
- height: auto;
- display: flex;
- align-items: center;
- justify-content: center;
- padding: 10px;
- border-radius: 10px;
+.playBtn-container {
+  background-color: #ffd366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+
 }
 
-.playBtnPic{
+.playBtnPic {
   width: 30px;
   height: auto;
 }
 
-
-.stopBtn-container{
-  background-color: #EAC9DE;
-  width: 150px;
+.stopBtn-container {
+  background-color: #eac9de;
+  width: 100px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
   border-radius: 10px;
- }
- 
- .stopBtnPic{
-   width: 30px;
-   height: auto;
- }
+  font-size: 18px;
+border:none;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+}
 
- .spotify-container{
- margin-top: 40px;
-width: 100%;
-height: 10vh;
-padding: 0;
- 
- }
 
- .disconnectSpotify{
+.spotify-container {
+  margin-top: 40px;
+  width: 100%;
+  height: 10vh;
+  padding: 0;
+}
+
+.disconnectSpotify {
   width: 30vw;
   height: 5vh;
   background-color: #80b71a6c;
@@ -240,37 +248,35 @@ padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
- }
+}
 
- .spotify{
+.spotify {
   width: 100%;
-height: 20vh;
-padding-top: 10%;
+  height: 20vh;
+  padding-top: 10%;
 
-display: flex;
-flex-direction: column;
-align-items: stretch;
-justify-content:end;
- }
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: end;
+}
 
- .spotify-container{
+.spotify-container {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: center;
- 
- }
- 
- .spotify-button{
-  display: flex;
-  align-items:baseline;
-  justify-content: center;
- padding: 0;
- margin: 0;
- }
+}
 
- .spotifyPlayer{
+.spotify-button {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.spotifyPlayer {
   margin-top: 20px;
   background-color: aqua;
- }
-
+}
