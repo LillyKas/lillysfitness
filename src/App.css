@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ color: black;
 }
 
 body {
@@ -154,7 +155,7 @@ a {
 
 .exercise-name {
   margin-top: 5vh;
-  font-size: 56px;
+  font-size: 36px;
 }
 
 .timer-container {
