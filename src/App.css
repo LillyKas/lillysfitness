@@ -96,7 +96,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: auto;
+  width: 100%;
   padding: 10%;
 
  
@@ -140,7 +140,7 @@ a {
 }
 
 .workout-container {
- 
+ width: 100%;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -158,7 +158,7 @@ a {
 }
 
 .timer-container {
- 
+
     display: flex;
   align-items:center;
   justify-content:flex-start;
@@ -282,5 +282,4 @@ font-weight: bold;
 
 .spotifyPlayer {
   margin-top: 20px;
-  background-color: aqua;
 }
