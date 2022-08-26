@@ -69,9 +69,9 @@ function Workouts() {
           <StretchWorkout />
           </div>
           )}
-          <div>
+          
           <Spotify  />
-        </div>
+      
         <LogoutButton />
           </div>
         
