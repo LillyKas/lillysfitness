@@ -102,7 +102,7 @@ const StretchWorkout = (props) => {
         
       
         <div className="button-container">
-        <button onClick={nextEx} >next</button>
+     
        
           <button onClick={stopTimer} className="stopBtn" >
           {srcPic}
@@ -112,6 +112,7 @@ const StretchWorkout = (props) => {
           </button>
      
         </div>
+        <button onClick={nextEx} >next</button>
         <div></div>
       </div>
     )
