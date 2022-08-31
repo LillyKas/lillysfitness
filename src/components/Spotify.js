@@ -118,7 +118,7 @@ const showPlaylist = (playlist) => {
         </a>
       ) : (
         <div className="spotify-container">
-       { showWebPlayer  (
+       { showWebPlayer &&  (
         <SpotifyInWorkout token={token} playlistId={playlistId}/>
         )}
         <div className="spotify-button">
