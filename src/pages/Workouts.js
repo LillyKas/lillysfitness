@@ -40,6 +40,7 @@ function Workouts() {
   const showMenu = () => {
     setWorkoutLinkContainer(true);
     setStretchWorkout(false);
+    setFullBodyWorkout(false);
     setShowSpotify(true);
   };
 

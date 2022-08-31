@@ -133,15 +133,13 @@ const showPlaylist = (playlist) => {
         </div>
         </div>
       )}
-       {token ? (
+       {token && (
        
         <form onSubmit={searchPlaylists} className="form">
           <input className="searchField" type="text" onChange={(e) => setSearchKey(e.target.value)} />
           <button className="searchBtn" type={"submit"}>Search</button>
         </form>
     
-      ) : (
-        <h2>Please connect your Spotify first</h2>
       )} 
 
 

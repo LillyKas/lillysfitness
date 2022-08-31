@@ -94,10 +94,10 @@ const StretchWorkout = (props) => {
       
         <div className="button-container">
        
-          <button onClick={stopTimer} className="stopBtn-container" >
+          <button onClick={stopTimer} className="stopBtn" >
           {srcPic}
           </button>
-          <button onClick={startTimer} className="stopBtn-container" disabled={btnStatusStart}>
+          <button onClick={startTimer} className="stopBtn" disabled={btnStatusStart}>
             Start
           </button>
      
