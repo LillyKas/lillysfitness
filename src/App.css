@@ -75,6 +75,21 @@ img {
   font-size: 16px;
   margin-top: 5vh;
 }
+
+
+.goToBtn{
+  width: 60vw;
+  height: auto;
+  background-color: #ead5e6;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 5vh;
+  padding: 5px;
+}
+
+
 .workoutPic {
   width: auto;
   height: 80px;
@@ -275,9 +290,8 @@ margin: 10px;
 
 .playlist-tile{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .playlistImage{

@@ -15,7 +15,8 @@ const LoginButton = () => {
     </button>
     ) : (
       <div>
-      <Link className='loginBtn' to="/"> Go to workouts </Link>
+      <h3>You successfully logged into Spotify</h3>
+      <Link className='goToBtn' to="/"> Go to workouts </Link>
       </div>
     )
   )
