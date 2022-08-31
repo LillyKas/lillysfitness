@@ -119,7 +119,14 @@ const showPlaylist = (playlist) => {
       ) : (
         <div className="spotify-container">
        { showWebPlayer &&  (
+        <div>
+        <div>
         <SpotifyInWorkout token={token} playlistId={playlistId}/>
+        </div>
+        <div>
+        <Link className='loginBtn' to="/"> Go to workouts </Link>
+        </div>
+        </div>
         )}
         <div className="spotify-button">
         <button className="disconnectSpotify" onClick={logoutSpotify}>
