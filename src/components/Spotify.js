@@ -41,6 +41,7 @@ function Spotify() {
 
   //Get Playlist Id for Spotify player
   const [playlistId, setPlaylistId] = useState("");
+  const [showWebPlayer, setShowWebPlayer] = useState(false);
 
   //Set Token and stor it in localStorage
   useEffect(() => {
@@ -99,11 +100,8 @@ function Spotify() {
 const showPlaylist = (playlist) => {  
   setPlaylistId(playlist)
   console.log("lalala")
-  return (
-    <div>
-          <SpotifyInWorkout token={token} playlistId={playlistId}/>
-    </div>
-  )
+  setShowWebPlayer(true)
+  
 }
 
   return (
@@ -120,7 +118,9 @@ const showPlaylist = (playlist) => {
         </a>
       ) : (
         <div className="spotify-container">
-        {showPlaylist()}
+        showWebPlayer ? (
+        <SpotifyInWorkout token={token} playlistId={playlistId}/>
+        )
         <div className="spotify-button">
         <button className="disconnectSpotify" onClick={logoutSpotify}>
           Disconnect Spotify
