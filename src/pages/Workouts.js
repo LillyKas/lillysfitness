@@ -14,7 +14,7 @@ import LogoutButton from "../components/LogoutButton";
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
 import FullBodyWorkout from "./FullBodyWorkout";
-import LoginButton from './components/LoginButton';
+import LoginButton from '../components/LoginButton';
 
 
 function Workouts() {
