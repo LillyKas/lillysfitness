@@ -84,7 +84,7 @@ function Spotify() {
     return playlists.map((playlist) => ( 
       <div key={playlist.id}>
         {playlist.images.length ? (
-          <img width={"100%"} src={playlist.images[0].url} alt="" onClick={showPlaylist()} />
+          <img width={"100%"} src={playlist.images[0].url} alt="" onClick={showPlaylist}/>
         ) : (
           <div>No Image</div>
         )}
