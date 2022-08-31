@@ -120,7 +120,7 @@ const showPlaylist = (playlist) => {
         </a>
       ) : (
         <div className="spotify-container">
-        {showPlaylist}
+        {showPlaylist()}
         <div className="spotify-button">
         <button className="disconnectSpotify" onClick={logoutSpotify}>
           Disconnect Spotify
