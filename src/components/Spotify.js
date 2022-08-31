@@ -84,7 +84,7 @@ function Spotify() {
     return playlists.map((playlist) => ( 
       <div key={playlist.id}>
         {playlist.images.length ? (
-          <img width={"100%"} src={playlist.images[0].url} alt="" onClick={showPlaylist(playlist.id)} />
+          <img width={"100%"} src={playlist.images[0].url} alt="" onClick={showPlaylist()} />
         ) : (
           <div>No Image</div>
         )}
@@ -94,8 +94,8 @@ function Spotify() {
     ));
   };
 
-const showPlaylist = (playlist) => {  
-  console.log(playlist);	
+const showPlaylist = () => {  
+  console.log("llalal");	
 }
 
   return (
@@ -130,9 +130,11 @@ const showPlaylist = (playlist) => {
       ) : (
         <h2>Please connect your Spotify first</h2>
       )} 
+
+      <div className="playlist-container">
       {renderPlaylists()}
      
-
+</div>
       
 
     

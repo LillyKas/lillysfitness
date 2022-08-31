@@ -282,3 +282,11 @@ font-weight: bold;
 .spotifyPlayer {
   margin-top: 20px;
 }
+
+
+.playlist-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
