@@ -5,6 +5,8 @@ import fullBodyPic from "../pictures/fullBody.png";
 import backArrowPic from "../pictures/left-arrow.png";
 import React, { useState, useEffect } from "react";
 
+import Overview from './Overview';
+
 
 
 import LogoutButton from "../components/LogoutButton";
@@ -12,6 +14,7 @@ import LogoutButton from "../components/LogoutButton";
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
 import FullBodyWorkout from "./FullBodyWorkout";
+import LoginButton from './components/LoginButton';
 
 
 function Workouts() {
@@ -46,7 +49,7 @@ function Workouts() {
 
 
 
-     isAuthenticated && ( 
+     isAuthenticated ? ( 
       <div>
         <div className="greeting-container">
           
@@ -97,10 +100,18 @@ function Workouts() {
         <LogoutButton />
           </div>
         
-      
-
+    
          
       </div>
+     ) : (
+      <div>
+        <Overview />
+           
+      <div className='logBtn'>
+      <LoginButton />
+      </div>
+      </div>
+   
      )
  
  

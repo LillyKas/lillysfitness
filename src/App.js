@@ -27,18 +27,14 @@ function App() {
   return (
     <div className="App">
     <div className="container">
-  
-<OverviewComponent />
+
       <Routes>      
         <Route path="/" element={ <Workouts /> } />
         <Route path="/stretch" element={ <StretchWorkout /> } />
         <Route path="/spotifyconnected" element={ <Spotify /> } />
         
       </Routes>
-    
-      <div className='logBtn'>
-      <LoginButton />
-      </div>
+
      
     </div>
     </div>
