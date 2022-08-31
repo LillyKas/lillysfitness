@@ -3,9 +3,8 @@ import SpotifyPlayer from "react-spotify-web-playback";
 
 const SpotifyInWorkout = (props) => {
 
-    const {token} = props.token;
-    const {playlistId} = props.playlistId;
-
+    const {token} = props;
+  
   return (
     <div >   <SpotifyPlayer
     className='spotifyPlayer'
