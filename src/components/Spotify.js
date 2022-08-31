@@ -98,6 +98,7 @@ function Spotify() {
 
 const showPlaylist = (playlist) => {  
   setPlaylistId(playlist)
+  console.log("lalala")
   return (
     <div>
           <SpotifyInWorkout token={token} playlistId={playlistId}/>

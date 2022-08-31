@@ -6,6 +6,8 @@ const SpotifyInWorkout = (props) => {
     const {token} = props.token;
     const {playlistId} = props.playlistId;
 
+    console.log("lalalablblblblbluuuuuuuuuuu")
+
     var uri = playlistId
     console.log(uri)
 
