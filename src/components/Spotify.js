@@ -39,6 +39,9 @@ function Spotify() {
   //Result of Spotify Search
   const [playlists, setPlaylists] = useState([]);
 
+  //Get Playlist Id for Spotify player
+  const [playlistId, setPlaylistId] = useState("");
+
   //Set Token and stor it in localStorage
   useEffect(() => {
     const hash = window.location.hash;
@@ -89,13 +92,12 @@ function Spotify() {
           <div>No Image</div>
         )}
         {playlist.name}
-        {playlist.id}
       </div>
     ));
   };
 
 const showPlaylist = (playlist) => {  
-  console.log(playlist);	
+  setPlaylistId(playlist)
 }
 
   return (
@@ -112,7 +114,7 @@ const showPlaylist = (playlist) => {
         </a>
       ) : (
         <div className="spotify-container">
-        <SpotifyInWorkout token={token} />
+        <SpotifyInWorkout token={token} playlistId={playlistId}/>
         <div className="spotify-button">
         <button className="disconnectSpotify" onClick={logoutSpotify}>
           Disconnect Spotify
