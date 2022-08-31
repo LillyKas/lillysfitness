@@ -98,6 +98,11 @@ function Spotify() {
 
 const showPlaylist = (playlist) => {  
   setPlaylistId(playlist)
+  return (
+    <div>
+          <SpotifyInWorkout token={token} playlistId={playlistId}/>
+    </div>
+  )
 }
 
   return (
@@ -114,7 +119,6 @@ const showPlaylist = (playlist) => {
         </a>
       ) : (
         <div className="spotify-container">
-        <SpotifyInWorkout token={token} playlistId={playlistId}/>
         <div className="spotify-button">
         <button className="disconnectSpotify" onClick={logoutSpotify}>
           Disconnect Spotify
