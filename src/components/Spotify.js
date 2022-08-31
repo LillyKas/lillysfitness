@@ -39,7 +39,7 @@ function Spotify() {
   //Result of Spotify Search
   const [playlists, setPlaylists] = useState([]);
 
-  //Get Playlist Id for Spotify player
+  //Get Playlist Id for Spotify player and show WebPlayer onClick
   const [playlistId, setPlaylistId] = useState("");
   const [showWebPlayer, setShowWebPlayer] = useState(false);
 
@@ -86,20 +86,20 @@ function Spotify() {
   //Display Artists
   const renderPlaylists = () => {
     return playlists.map((playlist) => ( 
-      <div key={playlist.id}>
+      <div className="playlistSingle" key={playlist.id}>
         {playlist.images.length ? (
-          <img width={"100%"} src={playlist.images[0].url} alt="" onClick={() => showPlaylist(playlist.id)}/>
+          <img width={"50%"} src={playlist.images[0].url} alt="" onClick={() => showPlaylist(playlist.id)}/>
         ) : (
           <div>No Image</div>
         )}
-        {playlist.name}
+        <h2>    {playlist.name}</h2>
+    
       </div>
     ));
   };
 
 const showPlaylist = (playlist) => {  
   setPlaylistId("spotify:playlist:"+ playlist)
-  console.log("lalala")
   setShowWebPlayer(true)
   
 }
@@ -118,7 +118,7 @@ const showPlaylist = (playlist) => {
         </a>
       ) : (
         <div className="spotify-container">
-       { showWebPlayer && (
+       { showWebPlayer  (
         <SpotifyInWorkout token={token} playlistId={playlistId}/>
         )}
         <div className="spotify-button">
@@ -130,9 +130,9 @@ const showPlaylist = (playlist) => {
       )}
        {token ? (
        
-        <form onSubmit={searchPlaylists}>
-          <input type="text" onChange={(e) => setSearchKey(e.target.value)} />
-          <button type={"submit"}>Search</button>
+        <form onSubmit={searchPlaylists} className="form">
+          <input className="searchField" type="text" onChange={(e) => setSearchKey(e.target.value)} />
+          <button className="searchBtn" type={"submit"}>Search</button>
         </form>
     
       ) : (

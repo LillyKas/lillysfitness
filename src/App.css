@@ -217,7 +217,7 @@ margin-top: 10%;
   height: auto;
 }
 
-.stopBtn-container {
+.stopBtn{
   background-color: #eac9de;
   width: 100px;
   height: auto;
@@ -230,8 +230,47 @@ margin-top: 10%;
 border:none;
 font-family: "Montserrat", sans-serif;
 font-weight: bold;
+margin: 10px;
 }
 
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.searchField{
+
+  border-radius: 10px;
+  width: 100px;
+  height: auto;
+  border-color:#FFB2B6 ;
+}
+
+.searchBtn{
+  background-color: #FFB2B6;
+  width: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+border:none;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+margin: 10px;
+}
+
+.playlistSingle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 
 .disconnectSpotify {

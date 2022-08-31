@@ -5,7 +5,7 @@ const SpotifyInWorkout = (props) => {
 
     const {token} = props;
     const {playlistId} = props;
-    console.log(props)
+
   
   return (
     <div >   <SpotifyPlayer
