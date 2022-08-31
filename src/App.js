@@ -38,7 +38,6 @@ function App() {
     
       <div className='logBtn'>
       <LoginButton />
-      <Spotify  />
       </div>
      
     </div>

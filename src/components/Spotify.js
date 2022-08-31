@@ -144,6 +144,8 @@ const showPlaylist = (playlist) => {
         <h2>Please connect your Spotify first</h2>
       )} 
 
+
+
       <div className="playlist-container">
       {renderPlaylists()}
      
