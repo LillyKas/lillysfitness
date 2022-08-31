@@ -1,8 +1,7 @@
 
 import { useAuth0 } from "@auth0/auth0-react";
 import stretchPic from "../pictures/Stretching.png";
-import fullBodyPic from "../pictures/Full Body.png";
-import warmUpPic from "../pictures/Warm Up.png";
+import fullBodyPic from "../pictures/fullBody.png";
 import backArrowPic from "../pictures/left-arrow.png";
 import React, { useState, useEffect } from "react";
 
@@ -12,6 +11,7 @@ import LogoutButton from "../components/LogoutButton";
 
 import Spotify from "../components/Spotify";
 import StretchWorkout from "./StretchWorkout";
+import FullBodyWorkout from "./FullBodyWorkout";
 
 
 function Workouts() {
@@ -20,11 +20,19 @@ function Workouts() {
 
   const [workoutLinkContainer, setWorkoutLinkContainer] = React.useState(true);
   const [stretchWorkout, setStretchWorkout] = React.useState(false);
+  const [fullBodyWorkout, setFullBodyWorkout] = React.useState(false);
   const [showSpotify, setShowSpotify] = React.useState(true);
 
   const showStretchWorkout = () => {
     setWorkoutLinkContainer(false);
     setStretchWorkout(true);
+    setShowSpotify(false);
+  };
+
+
+  const showFullBodyWorkout = () => {
+    setWorkoutLinkContainer(false);
+    setFullBodyWorkout(true);
     setShowSpotify(false);
   };
 
@@ -55,6 +63,7 @@ function Workouts() {
 
         <div className="menu-container">
           {workoutLinkContainer && (
+        
             <div className="workout-link-container">
               <img
                 src={stretchPic}
@@ -62,11 +71,24 @@ function Workouts() {
                 className="workoutPic"
                 onClick={showStretchWorkout}
               />   
+                  <img
+                src={fullBodyPic}
+                alt="fullBodyPic"
+                className="workoutPic"
+                onClick={showFullBodyWorkout}
+              />   
             </div>
+           
           )}
           {stretchWorkout && (
             <div className="stretchWorkout">
           <StretchWorkout />
+          </div>
+          )}
+
+          {fullBodyWorkout && (
+            <div className="stretchWorkout">
+          <FullBodyWorkout />
           </div>
           )}
           

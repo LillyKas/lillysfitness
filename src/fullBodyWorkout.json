@@ -1,0 +1,270 @@
+[ {
+  "number": "1",
+  "nameOfExercise": "squat",
+  "picture":"./../full_body/legs/squat.png",
+  "duration": 30
+},
+{
+  "number": "2",
+  "nameOfExercise": "squat jumps",
+  "picture":"./../full_body/legs/squat_jumps.png",
+  "duration": 30
+},
+{
+  "number": "3",
+  "nameOfExercise": "lunges forward",
+  "picture":"./../full_body/legs/lunges_front.png",
+  "duration": 30
+},
+{
+  "number": "4",
+  "nameOfExercise": "lunges reverse",
+  "picture":"./../full_body/legs/lunges_reverse.png",
+  "duration": 30
+},
+{
+  "number": "5",
+  "nameOfExercise": "step up or calves raised",
+  "picture":"./../full_body/legs/step_up.png",
+  "duration": 30
+},
+{
+  "number": "6",
+  "nameOfExercise": "squat hold",
+  "picture":"./../full_body/legs/squat_hold.png",
+  "duration": 30
+},
+
+
+
+  {
+    "number": "7",
+    "nameOfExercise": "jumping jack",
+    "picture":"./../full_body/core/jumping_jack.png",
+    "duration": 30
+  },
+  {
+    "number": "8",
+    "nameOfExercise": "walk down to plank",
+    "picture":"./../full_body/core/walk_down_plank.png",
+    "duration": 30
+  },
+  {
+    "number": "9",
+    "nameOfExercise": "high plank",
+    "picture":"./../full_body/core/high_plank.png",
+    "duration": 30
+  },
+  {
+    "number": "10",
+    "nameOfExercise": "mountain climber",
+    "picture":"./../full_body/core/mountain_climber.png",
+    "duration": 30
+  },
+  {
+    "number": "11",
+    "nameOfExercise": "t-rotation",
+    "picture":"./../full_body/core/t_rotation.png",
+    "duration": 30
+  },
+
+
+
+
+
+  {
+    "number": "12",
+    "nameOfExercise": "squat",
+    "picture":"./../full_body/legs/squat.png",
+    "duration": 30
+  },
+  {
+    "number": "13",
+    "nameOfExercise": "squat jumps",
+    "picture":"./../full_body/legs/squat_jumps.png",
+    "duration": 30
+  },
+  {
+    "number": "14",
+    "nameOfExercise": "lunges forward",
+    "picture":"./../full_body/legs/lunges_front.png",
+    "duration": 30
+  },
+  {
+    "number": "15",
+    "nameOfExercise": "lunges reverse",
+    "picture":"./../full_body/legs/lunges_reverse.png",
+    "duration": 30
+  },
+  {
+    "number": "16",
+    "nameOfExercise": "step up or calves raised",
+    "picture":"./../full_body/legs/step_up.png",
+    "duration": 30
+  },
+  {
+    "number": "17",
+    "nameOfExercise": "squat hold",
+    "picture":"./../full_body/legs/squat_hold.png",
+    "duration": 30
+  },
+
+
+
+
+
+
+  {
+    "number": "18",
+    "nameOfExercise": "glute bridge",
+    "picture":"./../full_body/booty/glute_bridge.png",
+    "duration": 30
+  },
+  {
+    "number": "19",
+    "nameOfExercise": "glute bridge pulsing",
+    "picture":"./../full_body/booty/glute_bridge_pulsing.png",
+    "duration": 30
+  },
+  {
+    "number": "20",
+    "nameOfExercise": "leg kick back right",
+    "picture":"./../full_body/booty/leg_kick_right.png",
+    "duration": 30
+  },
+  {
+    "number": "21",
+    "nameOfExercise": "leg kick back left",
+    "picture":"./../full_body/booty/leg_kick_left.png",
+    "duration": 30
+  },
+  {
+    "number": "22",
+    "nameOfExercise": "leg kick back right pulsing",
+    "picture":"./../full_body/booty/leg_kick_right_pulsing.png",
+    "duration": 30
+  },
+  {
+    "number": "23",
+    "nameOfExercise": "leg kick back left pulsing",
+    "picture":"./../full_body/booty/leg_kick_left_pulsing.png",
+    "duration": 30
+  },
+
+
+
+
+
+  {
+    "number": "24",
+    "nameOfExercise": "t-rotation",
+    "picture":"./../full_body/core/t_rotation.png",
+    "duration": 30
+  },
+  {
+    "number": "25",
+    "nameOfExercise": "jumping jack",
+    "picture":"./../full_body/core/jumping_jack.png",
+    "duration": 30
+  },
+  {
+    "number": "26",
+    "nameOfExercise": "walk down to plank",
+    "picture":"./../full_body/core/walk_down_plank.png",
+    "duration": 30
+  },
+  {
+    "number": "27",
+    "nameOfExercise": "high plank",
+    "picture":"./../full_body/core/high_plank.png",
+    "duration": 30
+  },
+  {
+    "number": "28",
+    "nameOfExercise": "mountain climber",
+    "picture":"./../full_body/core/mountain_climber.png",
+    "duration": 30
+  },
+  {
+    "number": "29",
+    "nameOfExercise": "t-rotation",
+    "picture":"./../full_body/core/t_rotation.png",
+    "duration": 30
+  },
+
+  
+  {
+    "number": "30",
+    "nameOfExercise": "sit ups",
+    "picture":"./../full_body/abs/sit_ups.png",
+    "duration": 30
+  },
+  {
+    "number": "31",
+    "nameOfExercise": "side crunch left/right",
+    "picture":"./../full_body/abs/side-crunch.png",
+    "duration": 30
+  },
+  {
+    "number": "32",
+    "nameOfExercise": "starfish crunch",
+    "picture":"./../full_body/abs/starfish_crunch.png",
+    "duration": 30
+  },
+  {
+    "number": "33",
+    "nameOfExercise": "crunch w/ leg lift",
+    "picture":"./../full_body/abs/crunch_leg_lift.png",
+    "duration": 30
+  },
+  {
+    "number": "34",
+    "nameOfExercise": "bicycle crunch",
+    "picture":"./../full_body/abs/bicycle_crunch.png",
+    "duration": 30
+  },
+  {
+    "number": "35",
+    "nameOfExercise": "russian twist",
+    "picture":"./../full_body/abs/russian_twist.png",
+    "duration": 30
+  },
+
+  
+  {
+    "number": "36",
+    "nameOfExercise": "push ups",
+    "picture":"./../full_body/arms/push_ups.png",
+    "duration": 30
+  },
+  {
+    "number": "37",
+    "nameOfExercise": "superman",
+    "picture":"./../full_body/arms/superman.png",
+    "duration": 30
+  },
+  {
+    "number": "38",
+    "nameOfExercise": "flappy arms",
+    "picture":"./../full_body/arms/flappy_birds.png",
+    "duration": 30
+  },
+  {
+    "number": "39",
+    "nameOfExercise": "back push",
+    "picture":"./../full_body/arms/back_push.png",
+    "duration": 30
+  },
+  {
+    "number": "40",
+    "nameOfExercise": "circles",
+    "picture":"./../full_body/arms/arm_circles.png",
+    "duration": 30
+  },
+  {
+    "number": "41",
+    "nameOfExercise": "hold",
+    "picture":"./../full_body/arms/hold.png",
+    "duration": 30
+  }
+]

@@ -81,10 +81,10 @@ function Spotify() {
 
   //Display Artists
   const renderPlaylists = () => {
-    return playlists.map((playlist) => (
+    return playlists.map((playlist) => ( 
       <div key={playlist.id}>
         {playlist.images.length ? (
-          <img width={"100%"} src={playlist.images[0].url} alt="" />
+          <img width={"100%"} src={playlist.images[0].url} alt="" onClick={showPlaylist(playlist.id)} />
         ) : (
           <div>No Image</div>
         )}
@@ -93,6 +93,10 @@ function Spotify() {
       </div>
     ));
   };
+
+const showPlaylist = (playlist) => {  
+  console.log(playlist);	
+}
 
   return (
 
@@ -116,7 +120,7 @@ function Spotify() {
         </div>
         </div>
       )}
-  {/*     {token ? (
+       {token ? (
        
         <form onSubmit={searchPlaylists}>
           <input type="text" onChange={(e) => setSearchKey(e.target.value)} />
@@ -125,7 +129,7 @@ function Spotify() {
     
       ) : (
         <h2>Please connect your Spotify first</h2>
-      )} */}
+      )} 
       {renderPlaylists()}
      
 
