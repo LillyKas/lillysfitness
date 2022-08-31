@@ -87,13 +87,14 @@ function Spotify() {
   const renderPlaylists = () => {
     return playlists.map((playlist) => ( 
       <div className="playlistSingle" key={playlist.id}>
+      <div className="playlist-tile">
         {playlist.images.length ? (
-          <img width={"50%"} src={playlist.images[0].url} alt="" onClick={() => showPlaylist(playlist.id)}/>
+          <img className="playlistImage" src={playlist.images[0].url} alt="" onClick={() => showPlaylist(playlist.id)}/>
         ) : (
           <div>No Image</div>
         )}
-        <h2>    {playlist.name}</h2>
-    
+        <p className="playlist-name">{playlist.name}</p>
+        </div>
       </div>
     ));
   };
@@ -122,9 +123,6 @@ const showPlaylist = (playlist) => {
         <div>
         <div>
         <SpotifyInWorkout token={token} playlistId={playlistId}/>
-        </div>
-        <div>
-        <Link className='loginBtn' to="/"> Go to workouts </Link>
         </div>
         </div>
         )}

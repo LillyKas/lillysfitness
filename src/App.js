@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { useAuth0 } from '@auth0/auth0-react'; 
 
+import {Link} from "react-router-dom";
+
 
 import Workouts from "./pages/Workouts";
 import StretchWorkout from "./pages/StretchWorkout";
@@ -35,10 +37,16 @@ function App() {
         <Route path="/spotifyconnected" element={ <Spotify /> } />
         
       </Routes>
+    
+     isAuthenticated ? (
+      <div>
+        <Link className='loginBtn' to="/"> Go to workouts </Link>
+        </div>
+     ) : (
       <div className='logBtn'>
       <LoginButton />
       </div>
-     
+     )
     </div>
     </div>
     

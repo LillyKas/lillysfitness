@@ -245,8 +245,9 @@ margin: 10px;
 
   border-radius: 10px;
   width: 100px;
-  height: auto;
+  height: 20px;
   border-color:#FFB2B6 ;
+  font-family: "Montserrat", sans-serif;
 }
 
 .searchBtn{
@@ -270,6 +271,23 @@ margin: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.playlist-tile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.playlistImage{
+  width: 50px;
+  height: 50px;
+}
+
+.playlist-name{
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
 }
 
 
