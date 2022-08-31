@@ -98,7 +98,7 @@ function Spotify() {
   };
 
 const showPlaylist = (playlist) => {  
-  setPlaylistId(playlist)
+  setPlaylistId("spotify:playlist:"+ playlist)
   console.log("lalala")
   setShowWebPlayer(true)
   
