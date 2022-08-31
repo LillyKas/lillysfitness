@@ -64,6 +64,10 @@ const StretchWorkout = (props) => {
     );
   };
 
+  const nextEx = () => {
+    setNumber(number + 1)
+  }
+
   return (
     isAuthenticated && (
       <div className="workout-container">
@@ -98,6 +102,7 @@ const StretchWorkout = (props) => {
         
       
         <div className="button-container">
+        <button onClick={nextEx} >next</button>
        
           <button onClick={stopTimer} className="stopBtn" >
           {srcPic}

@@ -90,6 +90,20 @@ img {
 }
 
 
+.stopBtn {
+  width: 60vw;
+  height: auto;
+  background-color: #ead5e6;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  margin-top: 5vh;
+  padding: 5px;
+}
+
+
+
 .workoutPic {
   width: auto;
   height: 80px;
@@ -287,8 +301,7 @@ margin: 10px;
   align-items: center;
   justify-content: center;
 }
-
-.playlist-tile{
+.tile{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
