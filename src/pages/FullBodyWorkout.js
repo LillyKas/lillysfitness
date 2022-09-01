@@ -85,11 +85,22 @@ const StretchWorkout = (props) => {
         <img
             src={exercise[number].picture}
             alt="exercisePic"
-            className="exercisePic"
+            className="exercisePicFB"
           />
             </div>
 
-          <h2 className="exercise-name">{exercise[number].nameOfExercise}</h2>
+          <div className="button-container">
+       
+       <button onClick={stopTimer} className="stopBtn" >
+       back
+       </button>
+       <h2 className="exercise-nameFB">{exercise[number].nameOfExercise}</h2>
+       <button onClick={startTimer} className="stopBtn" disabled={btnStatusStart}>
+        next
+       </button>
+  
+     </div>
+         
         
       
         <div className="button-container">
