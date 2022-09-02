@@ -165,13 +165,13 @@ a {
 
 .exercisePic {
   width: 200px;
-  height: auto;
+  height: 300px;
   margin-top: 5vh;
 }
 
 .exercisePicFB{
   width: auto;
-  height: 300px;
+  height: 200px;
   margin-top: 0vh;
 }
 
@@ -196,6 +196,7 @@ a {
 .exercise-nameFB{
   margin-top: 1vh;
   font-size: 36px;
+text-align: center;
 }
 .timer-container {
 
@@ -211,23 +212,14 @@ a {
   font-size: 24px;
 }
 
-
-
-
 .container-info {
-
 display: flex;
 flex-direction: column;
 align-items:center;
 justify-content:center;
 height: auto;
 width: 100%;
-
-
-
 }
-
-
 
 .time-counter-text {
   font-family: "Montserrat", sans-serif;
@@ -237,10 +229,9 @@ width: 100%;
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
-width: 100%;
-margin-top: 10%;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5%;
 }
 
 .playBtn-container {
@@ -267,6 +258,25 @@ margin-top: 10%;
   padding: 10px;
   border-radius: 10px;
   font-size: 18px;
+border:none;
+font-family: "Montserrat", sans-serif;
+font-weight: bold;
+margin: 20px;
+}
+
+
+
+
+.navBtns{
+  background-color: #FFB2B6;
+  width: 80px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
 border:none;
 font-family: "Montserrat", sans-serif;
 font-weight: bold;

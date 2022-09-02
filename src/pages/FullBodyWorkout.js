@@ -59,6 +59,16 @@ const StretchWorkout = (props) => {
     );
   };
 
+  const nextExercise = () => {  
+    setNumber(number + 1);
+    console.log("next")
+  }
+
+  const prevExercise = () => {  
+    setNumber(number - 1);
+    console.log("prev")
+  }
+
   return (
     isAuthenticated && (
       <div className="workout-container">
@@ -91,11 +101,11 @@ const StretchWorkout = (props) => {
 
           <div className="button-container">
        
-       <button onClick={stopTimer} className="stopBtn" >
+       <button onClick={prevExercise} className="navBtns" >
        back
        </button>
        <h2 className="exercise-nameFB">{exercise[number].nameOfExercise}</h2>
-       <button onClick={startTimer} className="stopBtn" disabled={btnStatusStart}>
+       <button onClick={nextExercise} className="navBtns" disabled={btnStatusStart}>
         next
        </button>
   
@@ -104,7 +114,7 @@ const StretchWorkout = (props) => {
         
       
         <div className="button-container">
-       
+      
           <button onClick={stopTimer} className="stopBtn" >
           {srcPic}
           </button>
