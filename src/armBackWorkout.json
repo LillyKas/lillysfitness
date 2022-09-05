@@ -1,0 +1,142 @@
+[
+    {
+      "number": "1",
+      "nameOfExercise": "push up & rotation",
+      "picture":"./../arm_and_back/push_ups_rotation.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "2",
+      "nameOfExercise": "push ups on knees, then full",
+      "picture":"./../arm_and_back/push_up.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "3",
+      "nameOfExercise": "walk down plank",
+      "picture":"./../arm_and_back/walk_down_to_plank.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "4",
+      "nameOfExercise": "dolphin hold",
+      "picture":"./../arm_and_back/dolphin_hold.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "5",
+      "nameOfExercise": "arms up & back",
+      "picture":"./../arm_and_back/arms_up_and_back.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "6",
+      "nameOfExercise": "arms up & front",
+      "picture":"./../arm_and_back/arms_up_and_front.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "7",
+      "nameOfExercise": "arm opener",
+      "picture":"./../arm_and_back/arms_opener.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "8",
+      "nameOfExercise": "slow up & down",
+      "picture":"./../arm_and_back/arms_up_down.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "9",
+      "nameOfExercise": "wacky bird",
+      "picture":"./../arm_and_back/wacky_bird.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "10",
+      "nameOfExercise": "triceps push up",
+      "picture":"./../arm_and_back/triceps_push_ups.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "11",
+      "nameOfExercise": "superman",
+      "picture":"./../arm_and_back/superman.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "12",
+      "nameOfExercise": "hold & 1 arm reach out",
+      "picture":"./../arm_and_back/hold_and_reach_out.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "13",
+      "nameOfExercise": "rotation & reach out",
+      "picture":"./../arm_and_back/rotation_and_reach_out.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "14",
+      "nameOfExercise": "flappy bird",
+      "picture":"./../arm_and_back/flappy_bird.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "15",
+      "nameOfExercise": "wacky bird",
+      "picture":"./../arm_and_back/wacky_bird.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "16",
+      "nameOfExercise": "quick front & back",
+      "picture":"./../arm_and_back/quick_back_and_front.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "17",
+      "nameOfExercise": "little side punches",
+      "picture":"./../arm_and_back/little_side_punches.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "18",
+      "nameOfExercise": "up & down plank",
+      "picture":"./../arm_and_back/up_and_down_plank.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "19",
+      "nameOfExercise": "dolphin hold",
+      "picture":"./../arm_and_back/dolphin_hold.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "20",
+      "nameOfExercise": "plank",
+      "picture":"./../arm_and_back/plank.png",
+      "duration": 30,
+      "sound": "./sounds/beep.wav"
+    }
+  ]

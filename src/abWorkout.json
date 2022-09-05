@@ -1,0 +1,72 @@
+[
+    {
+      "number": "1",
+      "nameOfExercise": "leg raises",
+      "picture":"./../abs/leg_raises.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "2",
+      "nameOfExercise": "toe touches",
+      "picture":"./../abs/toe_touches.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "3",
+      "nameOfExercise": "seated bicycle",
+      "picture":"./../abs/seated_bicycle.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "4",
+      "nameOfExercise": "alternating elbow to knee",
+      "picture":"./../abs/alternating_elbow_to_knee.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "5",
+      "nameOfExercise": "reverse crunch",
+      "picture":"./../abs/leg_raises.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "6",
+      "nameOfExercise": "side crunch left",
+      "picture":"./../abs/side_crunch.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "7",
+      "nameOfExercise": "side crunch right",
+      "picture":"./../abs/side_crunch.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "8",
+      "nameOfExercise": "bicycle crunch",
+      "picture":"./../abs/seated_bicycle.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "9",
+      "nameOfExercise": "star fish",
+      "picture":"./../abs/starfish_crunch.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    },
+    {
+      "number": "10",
+      "nameOfExercise": "hold",
+      "picture":"./../abs/hold.png",
+      "duration": 45,
+      "sound": "./sounds/beep.wav"
+    }
+  ]
